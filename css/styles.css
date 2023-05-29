@@ -1,0 +1,110 @@
+/* || GENERAL STYLING */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+/* || GENERAL STYLING END*/
+
+/* CUSTOM FONTS */
+
+/* Font face rule definition */
+@font-face {
+  font-family: "Gooper";
+  src: local("Gooper Italic"), local("Gooper-Italic"),
+    url("/fonts/Gooper-RegularItalic.ttf") format("woff2"),
+    url("/fonts/Gooper-RegularItalic.woff") format("woff"),
+    url("/fonts/Gooper-RegularItalic.woff2") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+/* ... */
+
+/* Custom font import */
+@import url("https://fonts.cdnfonts.com/css/trade-gothic-lt-std");
+/* ... */
+
+/* CUSTOM FONTS END */
+
+/* || HOME PAGE */
+
+/* Navbar */
+.rowContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBarItems {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.navBarItems #userImg {
+  height: 30px;
+  width: 30px;
+}
+/* ... */
+
+/* HERO SECTION */
+.heroBanner {
+  height: 97vh;
+  width: 100%;
+  background-position: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.heroBanner img {
+  position: absolute;
+  height: auto;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.innerContainer {
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.callToAction {
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 60%;
+  font-size: 90px;
+}
+
+.shopButtonContainer {
+  display: flex;
+  position: absolute;
+  left: 20%;
+  margin-top: 100px;
+}
+
+.shopBtn {
+  width: auto;
+  height: auto;
+  border-style: solid;
+  border-radius: 30px;
+}
+
+.shopBtn p {
+  margin: 5px;
+  font-size: 30px;
+  font-weight: 400;
+}
+/* ... */
+
+/* || HOME PAGE END */
