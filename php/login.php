@@ -10,14 +10,14 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="/projects/orderingMock/css/login.css">
+    <link rel="stylesheet" href="/css/login.css">
 </head>
 
 <body>
     <!-- Navbar -->
     <nav class="rowContainer">
         <div class="logoContainer">
-            <a href="/projects/orderingMock/index.php">
+            <a href="/index.php">
                 <h1>Dropping Donuts</h1>
             </a>
         </div>
@@ -26,7 +26,7 @@ session_start();
                 <li>Username</li>
                 <li>
                     <a href="login.php">
-                        <img id="userImg" src="/projects/orderingMock/images/user.png" alt="UserIcon" />
+                        <img id="userImg" src="/images/user.png" alt="UserIcon" />
                     </a>
                 </li>
             </ul>
@@ -40,7 +40,7 @@ session_start();
             <div class="heading">
                 <h1>Login</h1>
             </div>
-            <form action="/projects/orderingMock/include/loginProcess.php" method="post">
+            <form action="/include/loginProcess.php" method="post">
                 <div class="name">
                     <input type="text" id="name" name="name" placeholder="Name...">
                 </div>
