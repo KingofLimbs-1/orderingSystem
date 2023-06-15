@@ -1,3 +1,10 @@
+<?php
+session_start();
+// Session variable retrieval
+$username = $_SESSION['username'];
+// ...
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,9 +12,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dropping Don</title>
-  <!-- CSS Link -->
   <link rel="stylesheet" href="/css/styles.css" />
+  <title>Dropping Donuts</title>
 </head>
 
 <body>
@@ -15,12 +21,12 @@
   <nav class="rowContainer">
     <div class="logoContainer">
       <a href="index.php">
-        <h1>Dropping</h1>
+        <h1>Dropping Donuts</h1>
       </a>
     </div>
     <div class="navBarContainer">
       <ul class="navBarItems">
-        <li>Username</li>
+        <li><?php echo $username ?></li>
         <li>
           <a href="/php/login.php">
             <img id="userImg" src="/images/user.png" alt="UserIcon" />
@@ -34,7 +40,7 @@
   <!-- Hero -->
   <section class="heroBanner">
     <div class="innerContainer">
-      <img src="/images/heroDonut.png" alt="" />
+      <img src="/images/heroDonut.png" alt="bigPicOfDonuts" />
       <div class="callToAction">
         <p>Dropping Donuts:</p>
         <p>Savor the Taste of Heavenly Delights!</p>

@@ -1,0 +1,173 @@
+/* || GENERAL STYLING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #e6c284;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  /* || GENERAL STYLING END */
+  
+  /* CUSTOM FONTS */
+  
+  /* Font face rule definitions */
+  @font-face {
+    font-family: "Gooper";
+    src: local("Gooper Italic"), local("Gooper-Italic"),
+      url("/fonts/Gooper-RegularItalic.ttf") format("woff2"),
+      url("/fonts/Gooper-RegularItalic.woff") format("woff"),
+      url("/fonts/Gooper-RegularItalic.woff2") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: "Trade Gothic LT Std";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Trade Gothic LT Std"),
+      url("https://fonts.cdnfonts.com/s/14462/trade-gothic-lt-std-58a78e64434a9.woff")
+        format("woff");
+  }
+  /* ... */
+  
+  /* CUSTOM FONTS END */
+  
+  /* || NAVBAR */
+  .rowContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #baeaf1;
+  }
+  
+  .navBarItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Trade Gothic LT Std";
+    color: #6a5cc7;
+  }
+  
+  .navBarItems #userImg {
+    height: 30px;
+    width: 30px;
+  }
+  
+  .logoContainer h1 {
+    font-family: "Gooper";
+    font-size: 25px;
+    font-weight: 700;
+    margin: 8px;
+    color: #463e7a;
+  }
+  /* || NAVBAR END */
+  
+  /* || RECEIPT SECTION */
+  .receiptContainer {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    padding: 25px;
+    margin: 100px auto 0;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    background-color: #fff;
+    font-family: "Trade Gothic LT Std";
+  }
+  
+  .receiptHeading {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+  }
+  
+  .receiptHeading h1{
+    font-family: "Gooper";
+    color: #6a5cc7;
+  }
+  
+  .username{
+    padding-bottom: 30px;
+    font-size: 10px;
+  }
+  
+  .username h2{
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  thead th{
+    font-weight: 600;
+  }
+  
+  thead,
+  tfoot {
+    position: relative;
+  }
+  
+  thead th:not(:last-child) {
+    text-align: left;
+  }
+  
+  thead th:last-child {
+    text-align: right;
+  }
+  
+  tbody td:last-child, tfoot td:last-child{
+    text-align: right;
+  }
+  
+  tbody td{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  tfoot tr:first-child td {
+    padding-top: 15px;
+  }
+  
+  thead::after {
+    content: "";
+    width: 100%;
+    border-bottom: 1px dashed #000;
+    display: block;
+    position: absolute;
+  }
+  
+  tfoot::before {
+    content: "";
+    width: 100%;
+    border-top: 1px dashed #000;
+    display: block;
+    position: absolute;
+  }
+  
+  #addOn {
+    text-transform: uppercase;
+  }
+  
+  h3 {
+    border-top: 1px dashed #000;
+    padding-top: 10px;
+    margin-top: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 700;
+  }
+  /* || RECEIPT SECTION END */
