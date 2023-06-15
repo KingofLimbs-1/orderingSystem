@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // User info validation
     if ($name === "User" && $username === "Donut") {
         $_SESSION['username'] = $username;
-        header("Location: /index.php");
+        header("Location: ../index.php");
         exit();
     } else {
         echo "Invalid inputs";

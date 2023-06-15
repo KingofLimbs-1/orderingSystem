@@ -160,7 +160,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             echo $error . "</br>";
         }
     } else {
-        header('Location: /php/payment.php');
+        header('Location: ../php/payment.php');
         exit();
     }
     // ...

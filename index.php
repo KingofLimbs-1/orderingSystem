@@ -12,7 +12,7 @@ $username = $_SESSION['username'];
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
   <title>Dropping Donuts</title>
 </head>
 
@@ -28,8 +28,8 @@ $username = $_SESSION['username'];
       <ul class="navBarItems">
         <li><?php echo $username ?></li>
         <li>
-          <a href="/php/login.php">
-            <img id="userImg" src="/images/user.png" alt="UserIcon" />
+          <a href="php/login.php">
+            <img id="userImg" src="images/user.png" alt="UserIcon" />
           </a>
         </li>
       </ul>
@@ -40,7 +40,7 @@ $username = $_SESSION['username'];
   <!-- Hero -->
   <section class="heroBanner">
     <div class="innerContainer">
-      <img src="/images/heroDonut.png" alt="bigPicOfDonuts" />
+      <img src="images/heroDonut.png" alt="bigPicOfDonuts" />
       <div class="callToAction">
         <p>Dropping Donuts:</p>
         <p>Savor the Taste of Heavenly Delights!</p>
@@ -59,7 +59,7 @@ $username = $_SESSION['username'];
     <div class="shopHeading">
       <h1>Build your donut.</h1>
     </div>
-    <form action="/include/paymentProcess.php" method="POST">
+    <form action="include/paymentProcess.php" method="POST">
       <div class="baseSection" id="checkSection">
         <h1>Base</h1>
         <div class="baseContainer" id="checkContainer">
@@ -68,7 +68,7 @@ $username = $_SESSION['username'];
         </div>
         <div class="baseContainer" id="checkContainer">
           <input type="checkbox" id="base2" name="base[]" value="Glazed" />
-          <label for="base2">Glaze - R2,00</label>
+          <label for="base2">Glaze - R4,00</label>
         </div>
       </div>
       <div class="toppingSection" id="checkSection">
@@ -119,7 +119,7 @@ $username = $_SESSION['username'];
     </form>
 
     <div class="shopItems">
-      <img src="/images/donutOfferings.png" alt="picOfDonuts">
+      <img src="images/donutOfferings.png" alt="picOfDonuts">
     </div>
   </section>
   <!-- Shop content end -->
