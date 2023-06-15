@@ -67,7 +67,7 @@ $username = $_SESSION['username'];
           <label for="base1">Plain - R4,00</label>
         </div>
         <div class="baseContainer" id="checkContainer">
-          <input type="checkbox" id="base2" name="base[]" value="Glazed" data-numeric-value="2" />
+          <input type="checkbox" id="base2" name="base[]" value="Glazed" />
           <label for="base2">Glaze - R2,00</label>
         </div>
       </div>
@@ -92,17 +92,17 @@ $username = $_SESSION['username'];
       <div class="fillingSection" id="checkSection">
         <h1>Fillings</h1>
         <div class="fillingContainer" id="checkContainer">
-          <input type="checkbox" id="filling1" name="fillings[]" value="Cream" data-numeric-value="2" />
+          <input type="checkbox" id="filling1" name="fillings[]" value="Cream" />
           <label for="filling1">Cream - R2,00</label>
         </div>
 
         <div class="fillingContainer" id="checkContainer">
-          <input type="checkbox" id="filling2" name="fillings[]" value="Strawberry" data-numeric-value="2" />
+          <input type="checkbox" id="filling2" name="fillings[]" value="Strawberry" />
           <label for="filling2">Strawberry - R2,00</label>
         </div>
 
         <div class="fillingContainer" id="checkContainer">
-          <input type="checkbox" id="filling3" name="fillings[]" value="Apricot" data-numeric-value="2" />
+          <input type="checkbox" id="filling3" name="fillings[]" value="Apricot" />
           <label for="filling3">Apricot - R2,00</label>
         </div>
       </div>
