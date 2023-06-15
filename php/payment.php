@@ -17,8 +17,8 @@ $total = $_SESSION['total'];
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/projects/orderingMock/css/payment.css">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="/css/payment.css">
 </head>
 
 <body>
@@ -26,7 +26,7 @@ $total = $_SESSION['total'];
     <!-- Navbar -->
     <nav class="rowContainer">
         <div class="logoContainer">
-            <a href="/projects/orderingMock/index.php">
+            <a href="/index.php">
                 <h1>Dropping Donuts</h1>
             </a>
         </div>
@@ -34,8 +34,8 @@ $total = $_SESSION['total'];
             <ul class="navBarItems">
                 <li><?php echo $username ?></li>
                 <li>
-                    <a href="login.php">
-                        <img id="userImg" src="/projects/orderingMock/images/user.png" alt="UserIcon" />
+                    <a href="/php/login.php">
+                        <img id="userImg" src="/images/user.png" alt="UserIcon" />
                     </a>
                 </li>
             </ul>
