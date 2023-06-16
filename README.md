@@ -2,5 +2,5 @@
 
 ## User Login Details:
 
-Name: "User"
-Username: "Donut"
+* Name: "User"
+* Username: "Donut"
