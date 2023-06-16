@@ -65,6 +65,11 @@ a {
   color: #6a5cc7;
 }
 
+.navBarItems #signOutBtn{
+  margin-right: 10px;
+  color: grey;
+}
+
 .navBarItems #userImg {
   height: 30px;
   width: 30px;

@@ -26,6 +26,11 @@ $username = $_SESSION['username'];
     </div>
     <div class="navBarContainer">
       <ul class="navBarItems">
+        <?php if ($username !== "") : ?>
+          <li>
+            <a id="signOutBtn" href="../orderingSystem/include/logoutProcess.php">Logout</a>
+          </li>
+        <?php endif; ?>
         <li><?php echo $username ?></li>
         <li>
           <a href="php/login.php">
