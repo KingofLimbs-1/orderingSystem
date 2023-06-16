@@ -34,7 +34,7 @@ $total = $_SESSION['total'];
             <ul class="navBarItems">
                 <li><?php echo $username ?></li>
                 <li>
-                    <a href="../php/login.php">
+                    <a href="../include/loginProcess.php">
                         <img id="userImg" src="../images/user.png" alt="UserIcon" />
                     </a>
                 </li>

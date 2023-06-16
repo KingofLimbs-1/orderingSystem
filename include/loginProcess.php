@@ -22,4 +22,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // INPUT VALIDATION END
 }
 
+// User redirection when signed in
+// Avoids user from accessing login page if they've already signed in
+if((isset($_SESSION['username']))){
+    echo "You are already signed in";
+}else{
+    header("Location: /projects/orderingMock/php/login.php");
+    exit();
+}
+// ...
+
 ?>
