@@ -1,7 +1,7 @@
 <?php
 session_start();
 // Session variable retrieval
-$username = $_SESSION['username'];
+$username = isset($_SESSION['username']) ? $_SESSION['username'] : "";
 // ...
 ?>
 
